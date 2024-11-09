@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Age Calculator</title>
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="input">
+                <p>DAY</p>
+                <input type="text" placeholder="DD" id="day" pattern="[0-9]*" maxlength="2">
+                <p id="dayVal">Must be a valid day</p>
+                <p id="dayReq">This field is required</p>
+            </div>
+            <div class="input">
+                <p>MONTH</p>
+                <input type="text" placeholder="MM" id="month" pattern="[0-9]*" maxlength="2">
+                <p id="monthVal">Must be a valid month</p>
+                <p id="monthReq">This field is required</p>
+            </div>
+            <div class="input">
+                <p>YEAR</p>
+                <input type="text" placeholder="YYYY" id="year" pattern="[0-9]*" maxlength="4">
+                <p id="yearVal">Must be in the past</p>
+                <p id="yearReq">This field is required</p>
+            </div>
+        </div>
+
+        <div class="mid">
+            <div class="img">
+                <img src="./assets/images/icon-arrow.svg" alt="icon-arrow">
+            </div>
+        </div>
+
+        <div class="down">
+            <div class="row">
+                <h1 class="year">--</h1>
+                <h1>years</h1>
+            </div>
+            <div class="row">
+                <h1 class="month">--</h1>
+                <h1>months</h1>
+            </div>
+            <div class="row">
+                <h1 class="day">--</h1>
+                <h1>days</h1>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
